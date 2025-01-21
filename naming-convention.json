@@ -1,209 +1,548 @@
 {
-  agenciaList: ["tca", "tcarx"],
-  
-  clienteList: ["promtur", "prom"],
-  
-  divisionMarcaList: ["promtur", "prom", "institutional", "branding"],
-  
-  paisList: [
-    "arg", "blz", "bol", "bra", "can", "chl", "col", "cri", "cub", "dma", "dom", "ecu", "grd",
-    "gtm", "guy", "hnd", "hti", "jam", "kna", "lca", "mex", "nic", "pan", "per", "pry", "slv",
-    "sur", "tto", "ury", "usa", "ven", "vct", "esp"
-  ],
-  
-  campaniaPrincipalList: ["liveformore"],
-  
-  estacionalidadList: ["aa", "sea", "ost"],
-  
-  tipoCompraList: ["cpm", "cpc", "cpv", "cpa"],
-  
-  objetivoMarketingList: [
-    "awareness", "consideration", "conversion", "aw", "cons", "consideration", "pla", "traffic"
-  ],
-  
-  idiomaList: ["spa", "eng", "por", "port"],
-  
-  periodoList: [
-    "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec", "aon", "ago"
-  ],
-  
-  kpiList: [
-    "15-second-views", "add-to-carts", "app-installs", "clicks", "conversations", "follows",
-    "impressions", "listens", "on-platform-leads", "on-site-leads", "page-views", "post-engagements",
-    "purchases", "thruplays", "viewable-impressions", "views", "link-clicks"
-  ],
-  
-  versionList: [
-    "v0", "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10",
-    "v11", "v12", "v13", "v14", "v15", "v16", "v17", "v18", "v19", "v20",
-    "v21", "v22", "v23", "v24", "v25", "v26", "v27", "v28", "v29", "v30",
-    "v31", "v32", "v33", "v34", "v35", "v36", "v37", "v38", "v39", "v40",
-    "v41", "v42", "v43", "v44", "v45", "v46", "v47", "v48", "v49", "v50"
-  ],
-  
-  generoEdadList: [
-    "h18over", "h2030", "h2534", "h2540", "h2555", "hm1825", "hm1835", "hm1845",
-    "hm1855", "hm1864", "hm18over", "hm2030", "hm2534", "hm25over", "hm30over",
-    "hm35over", "m18over", "m2030", "m2534", "m2540", "m2550", "m2555",
-    "m25over", "m3040", "m3049", "m30over", "m4564"
-  ],
-  
-  tipoAudienciaList: [
-    "Combined", "Contextual", "Interests", "Keywords", "Lookalike", "Open", 
-    "Products", "Retargeting", "Topics", "p-int"
-  ],
-  
-  nombreAudienciaList: [
-    "air-travel", "beach-travel", "bocas-del-toro", "brand-category", "brand-generic",
-    "business-travel", "category", "family-travel", "generic", "green-living-enthusiasts",
-    "healthy-living", "na", "otros", "outdoor-enthusiasts", "panama-city",
-    "riviera-pacifica", "sport-fans", "emprendedores"
-  ],
-  
-  codigoMonedaList: [
-    "ARS", "BBD", "BOB", "BRL", "BSD", "BZD", "CAD", "CLP", "COP", "CRC", "CUP", "DOP",
-    "GYD", "GTQ", "HNL", "HTG", "JMD", "MXN", "NIO", "PAB", "PEN", "PYG", "SRD", "SVC",
-    "TTD", "USD", "UYU", "VES"
-  ],
-  
-  ga4KeyEventNameList: [
-    "add_payment_info", "add_shipping_info", "add_to_cart", "add_to_wishlist", "begin_checkout",
-    "earn_virtual_currency", "generate_lead", "join_group", "level_end", "level_start", "login",
-    "login_failure", "login_success", "purchase", "purchase_refund", "refund", "remove_from_cart",
-    "remove_from_wishlist", "search", "select_content", "select_item", "select_promotion",
-    "share", "sign_up", "sign_up_failure", "sign_up_success", "spend_virtual_currency",
-    "start_tutorial", "tutorial_complete", "unlock_achievement", "view_cart",
-    "view_item", "view_item_list", "view_promotion", "view_search_results", "page_view"
-  ],
-  
-  formatoAnuncioList: [
-    "formato-1", "formato-2"
-  ],
-  
-  fuenteList: {
-    google: {
-      campaignTypes: {
-        "search": ["paid-search"],
-        "display": ["paid-display"],
-        "performance-max": ["paid-cross-network"],
-        "demand-gen": ["paid-cross-network"]
-      }
-    },
-    youtube: {
-      campaignTypes: {
-        "ad-sequence": ["paid-video"],
-        "bumper-ad": ["paid-video"],
-        "efficient-reach": ["paid-video"],
-        "in-feed-video-ad": ["paid-video"],
-        "masthead": ["paid-video"],
-        "non-skippable-in-stream": ["paid-video"],
-        "oustream": ["paid-video"],
-        "responsive-video-ad": ["paid-video"],
-        "shorts": ["paid-video"],
-        "skippable-in-stream": ["paid-video"],
-        "target-frequency": ["paid-video"],
-        "subscriptions-and-engagements": ["paid-video"]
-      }
-    },
-    meta: {
-      campaignTypes: {
-        "social": ["paid-social"]
-      }
-    },
-    spotify: {
-      campaignTypes: {
-        "audio": ["paid-audio"],
-        "video": ["paid-video"]
-      }
-    },
-    instagram: {
-      campaignTypes: {
-        "social": ["paid-social"]
-      }
-    },
-    tiktok: {
-      campaignTypes: {
-        "social": ["paid-social"]
-      }
-    },
-    x: {
-      campaignTypes: {
-        "social": ["paid-social"]
-      }
-    },
-    pinterest: {
-      campaignTypes: {
-        "social": ["paid-social"]
-      }
-    },
-    linkedin: {
-      campaignTypes: {
-        "social": ["paid-social"]
-      }
-    },
-    ddm: {
-      campaignTypes: {
-        "audio": ["paid-audio"],
-        "display": ["paid-display"],
-        "video": ["paid-video"]
-      }
-    },
-    "rimarc-rimarc": {
-      campaignTypes: {
-        "audio": ["paid-audio"],
-        "connected-tv": ["paid-video"],
-        "display": ["paid-display"],
-        "native-ad": ["paid-display"],
-        "tv-sync": ["paid-video"],
-        "video": ["paid-video"],
-        "video-in-app": ["paid-video"],
-        "video-reward": ["paid-video"]
-      }
-    },
-    "rimarc-google": {
-      campaignTypes: {
-        "audio": ["paid-audio"],
-        "connected-tv": ["paid-video"],
-        "display": ["paid-display"],
-        "native-ad": ["paid-display"],
-        "tv-sync": ["paid-video"],
-        "video": ["paid-video"],
-        "video-in-app": ["paid-video"],
-        "video-reward": ["paid-video"]
-      }
-    },
-    "rimarc-spotify": {
-      campaignTypes: {
-        "audio": ["paid-audio"],
-        "display": ["paid-display"],
-        "video": ["paid-video"],
-        "video-in-app": ["paid-video"],
-        "video-reward": ["paid-video"]
-      }
-    },
-    "rimarc-youtube": {
-      campaignTypes: {
-        "video": ["paid-video"],
-        "video-in-app": ["paid-video"],
-        "video-reward": ["paid-video"],
-        "youtube-semantic": ["paid-video"]
-      }
-    },
-    "rimarc-netflix": {
-      campaignTypes: {
-        "connected-tv": ["paid-video"],
-        "video": ["paid-video"],
-        "video-in-app": ["paid-video"],
-        "video-reward": ["paid-video"]
-      }
-    },
-    "rimarc-vix": {
-      campaignTypes: {
-        "connected-tv": ["paid-video"],
-        "video": ["paid-video"],
-        "video-in-app": ["paid-video"],
-        "video-reward": ["paid-video"]
-      }
+    "agenciaList": [
+        "tca",
+        "tcarx"
+    ],
+    "clienteList": [
+        "promtur",
+        "prom"
+    ],
+    "divisionMarcaList": [
+        "promtur",
+        "prom",
+        "institutional",
+        "branding"
+    ],
+    "paisList": [
+        "arg",
+        "blz",
+        "bol",
+        "bra",
+        "can",
+        "chl",
+        "col",
+        "cri",
+        "cub",
+        "dma",
+        "dom",
+        "ecu",
+        "grd",
+        "gtm",
+        "guy",
+        "hnd",
+        "hti",
+        "jam",
+        "kna",
+        "lca",
+        "mex",
+        "nic",
+        "pan",
+        "per",
+        "pry",
+        "slv",
+        "sur",
+        "tto",
+        "ury",
+        "usa",
+        "ven",
+        "vct",
+        "esp"
+    ],
+    "campaniaPrincipalList": [
+        "liveformore"
+    ],
+    "estacionalidadList": [
+        "aa",
+        "sea",
+        "ost"
+    ],
+    "tipoCompraList": [
+        "cpm",
+        "cpc",
+        "cpv",
+        "cpa"
+    ],
+    "objetivoMarketingList": [
+        "awareness",
+        "consideration",
+        "conversion",
+        "aw",
+        "cons",
+        "consideration",
+        "pla",
+        "traffic"
+    ],
+    "idiomaList": [
+        "spa",
+        "eng",
+        "por",
+        "port"
+    ],
+    "periodoList": [
+        "jan",
+        "feb",
+        "mar",
+        "apr",
+        "may",
+        "jun",
+        "jul",
+        "aug",
+        "sep",
+        "oct",
+        "nov",
+        "dec",
+        "aon",
+        "ago"
+    ],
+    "kpiList": [
+        "15-second-views",
+        "add-to-carts",
+        "app-installs",
+        "clicks",
+        "conversations",
+        "follows",
+        "impressions",
+        "listens",
+        "on-platform-leads",
+        "on-site-leads",
+        "page-views",
+        "post-engagements",
+        "purchases",
+        "thruplays",
+        "viewable-impressions",
+        "views",
+        "link-clicks"
+    ],
+    "versionList": [
+        "v0",
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5",
+        "v6",
+        "v7",
+        "v8",
+        "v9",
+        "v10",
+        "v11",
+        "v12",
+        "v13",
+        "v14",
+        "v15",
+        "v16",
+        "v17",
+        "v18",
+        "v19",
+        "v20",
+        "v21",
+        "v22",
+        "v23",
+        "v24",
+        "v25",
+        "v26",
+        "v27",
+        "v28",
+        "v29",
+        "v30",
+        "v31",
+        "v32",
+        "v33",
+        "v34",
+        "v35",
+        "v36",
+        "v37",
+        "v38",
+        "v39",
+        "v40",
+        "v41",
+        "v42",
+        "v43",
+        "v44",
+        "v45",
+        "v46",
+        "v47",
+        "v48",
+        "v49",
+        "v50"
+    ],
+    "generoEdadList": [
+        "h18over",
+        "h2030",
+        "h2534",
+        "h2540",
+        "h2555",
+        "hm1825",
+        "hm1835",
+        "hm1845",
+        "hm1855",
+        "hm1864",
+        "hm18over",
+        "hm2030",
+        "hm2534",
+        "hm25over",
+        "hm30over",
+        "hm35over",
+        "m18over",
+        "m2030",
+        "m2534",
+        "m2540",
+        "m2550",
+        "m2555",
+        "m25over",
+        "m3040",
+        "m3049",
+        "m30over",
+        "m4564"
+    ],
+    "tipoAudienciaList": [
+        "Combined",
+        "Contextual",
+        "Interests",
+        "Keywords",
+        "Lookalike",
+        "Open",
+        "Products",
+        "Retargeting",
+        "Topics",
+        "p-int"
+    ],
+    "nombreAudienciaList": [
+        "air-travel",
+        "beach-travel",
+        "bocas-del-toro",
+        "brand-category",
+        "brand-generic",
+        "business-travel",
+        "category",
+        "family-travel",
+        "generic",
+        "green-living-enthusiasts",
+        "healthy-living",
+        "na",
+        "otros",
+        "outdoor-enthusiasts",
+        "panama-city",
+        "riviera-pacifica",
+        "sport-fans",
+        "emprendedores"
+    ],
+    "codigoMonedaList": [
+        "ARS",
+        "BBD",
+        "BOB",
+        "BRL",
+        "BSD",
+        "BZD",
+        "CAD",
+        "CLP",
+        "COP",
+        "CRC",
+        "CUP",
+        "DOP",
+        "GYD",
+        "GTQ",
+        "HNL",
+        "HTG",
+        "JMD",
+        "MXN",
+        "NIO",
+        "PAB",
+        "PEN",
+        "PYG",
+        "SRD",
+        "SVC",
+        "TTD",
+        "USD",
+        "UYU",
+        "VES"
+    ],
+    "ga4KeyEventNameList": [
+        "add_payment_info",
+        "add_shipping_info",
+        "add_to_cart",
+        "add_to_wishlist",
+        "begin_checkout",
+        "earn_virtual_currency",
+        "generate_lead",
+        "join_group",
+        "level_end",
+        "level_start",
+        "login",
+        "login_failure",
+        "login_success",
+        "purchase",
+        "purchase_refund",
+        "refund",
+        "remove_from_cart",
+        "remove_from_wishlist",
+        "search",
+        "select_content",
+        "select_item",
+        "select_promotion",
+        "share",
+        "sign_up",
+        "sign_up_failure",
+        "sign_up_success",
+        "spend_virtual_currency",
+        "start_tutorial",
+        "tutorial_complete",
+        "unlock_achievement",
+        "view_cart",
+        "view_item",
+        "view_item_list",
+        "view_promotion",
+        "view_search_results",
+        "page_view"
+    ],
+    "formatoAnuncioList": [
+        "formato-1",
+        "formato-2"
+    ],
+    "fuenteList": {
+        "google": {
+            "campaignTypes": {
+                "search": [
+                    "paid-search"
+                ],
+                "display": [
+                    "paid-display"
+                ],
+                "performance-max": [
+                    "paid-cross-network"
+                ],
+                "demand-gen": [
+                    "paid-cross-network"
+                ]
+            }
+        },
+        "youtube": {
+            "campaignTypes": {
+                "ad-sequence": [
+                    "paid-video"
+                ],
+                "bumper-ad": [
+                    "paid-video"
+                ],
+                "efficient-reach": [
+                    "paid-video"
+                ],
+                "in-feed-video-ad": [
+                    "paid-video"
+                ],
+                "masthead": [
+                    "paid-video"
+                ],
+                "non-skippable-in-stream": [
+                    "paid-video"
+                ],
+                "oustream": [
+                    "paid-video"
+                ],
+                "responsive-video-ad": [
+                    "paid-video"
+                ],
+                "shorts": [
+                    "paid-video"
+                ],
+                "skippable-in-stream": [
+                    "paid-video"
+                ],
+                "target-frequency": [
+                    "paid-video"
+                ],
+                "subscriptions-and-engagements": [
+                    "paid-video"
+                ]
+            }
+        },
+        "meta": {
+            "campaignTypes": {
+                "social": [
+                    "paid-social"
+                ]
+            }
+        },
+        "spotify": {
+            "campaignTypes": {
+                "audio": [
+                    "paid-audio"
+                ],
+                "video": [
+                    "paid-video"
+                ]
+            }
+        },
+        "instagram": {
+            "campaignTypes": {
+                "social": [
+                    "paid-social"
+                ]
+            }
+        },
+        "tiktok": {
+            "campaignTypes": {
+                "social": [
+                    "paid-social"
+                ]
+            }
+        },
+        "x": {
+            "campaignTypes": {
+                "social": [
+                    "paid-social"
+                ]
+            }
+        },
+        "pinterest": {
+            "campaignTypes": {
+                "social": [
+                    "paid-social"
+                ]
+            }
+        },
+        "linkedin": {
+            "campaignTypes": {
+                "social": [
+                    "paid-social"
+                ]
+            }
+        },
+        "ddm": {
+            "campaignTypes": {
+                "audio": [
+                    "paid-audio"
+                ],
+                "display": [
+                    "paid-display"
+                ],
+                "video": [
+                    "paid-video"
+                ]
+            }
+        },
+        "rimarc-rimarc": {
+            "campaignTypes": {
+                "audio": [
+                    "paid-audio"
+                ],
+                "connected-tv": [
+                    "paid-video"
+                ],
+                "display": [
+                    "paid-display"
+                ],
+                "native-ad": [
+                    "paid-display"
+                ],
+                "tv-sync": [
+                    "paid-video"
+                ],
+                "video": [
+                    "paid-video"
+                ],
+                "video-in-app": [
+                    "paid-video"
+                ],
+                "video-reward": [
+                    "paid-video"
+                ]
+            }
+        },
+        "rimarc-google": {
+            "campaignTypes": {
+                "audio": [
+                    "paid-audio"
+                ],
+                "connected-tv": [
+                    "paid-video"
+                ],
+                "display": [
+                    "paid-display"
+                ],
+                "native-ad": [
+                    "paid-display"
+                ],
+                "tv-sync": [
+                    "paid-video"
+                ],
+                "video": [
+                    "paid-video"
+                ],
+                "video-in-app": [
+                    "paid-video"
+                ],
+                "video-reward": [
+                    "paid-video"
+                ]
+            }
+        },
+        "rimarc-spotify": {
+            "campaignTypes": {
+                "audio": [
+                    "paid-audio"
+                ],
+                "display": [
+                    "paid-display"
+                ],
+                "video": [
+                    "paid-video"
+                ],
+                "video-in-app": [
+                    "paid-video"
+                ],
+                "video-reward": [
+                    "paid-video"
+                ]
+            }
+        },
+        "rimarc-youtube": {
+            "campaignTypes": {
+                "video": [
+                    "paid-video"
+                ],
+                "video-in-app": [
+                    "paid-video"
+                ],
+                "video-reward": [
+                    "paid-video"
+                ],
+                "youtube-semantic": [
+                    "paid-video"
+                ]
+            }
+        },
+        "rimarc-netflix": {
+            "campaignTypes": {
+                "connected-tv": [
+                    "paid-video"
+                ],
+                "video": [
+                    "paid-video"
+                ],
+                "video-in-app": [
+                    "paid-video"
+                ],
+                "video-reward": [
+                    "paid-video"
+                ]
+            }
+        },
+        "rimarc-vix": {
+            "campaignTypes": {
+                "connected-tv": [
+                    "paid-video"
+                ],
+                "video": [
+                    "paid-video"
+                ],
+                "video-in-app": [
+                    "paid-video"
+                ],
+                "video-reward": [
+                    "paid-video"
+                ]
+            }
+        }
     }
-  }
-};
+}
