@@ -328,7 +328,8 @@
         "meta": {
             "campaignTypes": {
                 "social": [
-                    "paid-social"
+                    "paid-social",
+                    "test"
                 ]
             }
         },
